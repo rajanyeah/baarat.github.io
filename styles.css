@@ -6,7 +6,7 @@ body, html {
     scroll-behavior: smooth;
     color: #fff;
     overflow-x: hidden;
-    background: url('/Users/rajanya/Desktop/baraat_community_website/images/baraat_background.JPEG') no-repeat center center/cover;
+    background: url('images/baraat_background.JPEG') no-repeat center center/cover;
 }
 
 /* Navigation Bar */
@@ -527,8 +527,8 @@ footer {
 }
 
 .signature-corner img {
-    width: 250px;  /* Width for rectangular shape */
-    height: 150px;  /* Taller height */
+    width: 150px;  /* Width for rectangular shape */
+    height: 200px;  /* Taller height */
     border: 3px solid #ffcc00;
 }
 
@@ -544,7 +544,7 @@ footer {
 
 .flag-container {
     position: fixed;
-    bottom: 40px;
+    bottom: 60px;
     right: 190px;  /* Positioned next to the image */
     width: 150px;
     z-index: 5;
@@ -552,20 +552,6 @@ footer {
 }
 
 .flag-container img {
-    width: 100%;
-    height: auto;
-}
-
-.whoa-container {
-    position: fixed;
-    bottom: 170px;
-    right: 10px;  /* Positioned next to the image */
-    width: 150px;
-    z-index: 5;
-    transform: rotate(5deg);  /* Matching slant */
-}
-
-.whoa-container img {
     width: 100%;
     height: auto;
 }
