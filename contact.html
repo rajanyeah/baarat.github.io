@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baraat Community - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sparky-stones" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src = "/Users/rajanya/Desktop/baraat_community_website/images/baraat_nav.png" alt ="Baraat Community">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+
+    <!-- Page Wrapper -->
+    <div class="container1">
+        <section class="contact-section">
+
+            <div class="contact-details">
+                <h1>Get In Touch</h1>
+                <p>We'd love to hear from you! Whether you have a project you need people for, a suggestion, or just want to say hello, Baraat is here to help!</p>
+                <p><strong>Phone:</strong> +91 7976594316</p>
+                <p><strong>Other Contact:</strong> +91 9462980233</p>
+                <p><strong>Email:</strong> rajanyaya@gmail.com</p>
+                <p><strong>Address:</strong> Raja Park, Jaipur</p>
+            </div>
+
+            <!-- Form Section -->
+            <div class="form-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBFUoPTkQVTro01eVLvGz20XsNr9TGN6JS2WuFHPjz1Craog/viewform?embedded=true" 
+                        style="width: 100%; max-width: 640px; height: 821px;" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">
+                    Loading…
+                </iframe>
+            </div>
+
+            <!-- Add this hidden iframe -->
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+            <!-- Add this script just before the closing body tag -->
+            <script type="text/javascript">
+                var submitted = false;
+                document.getElementById('hidden_iframe').onload = function() {
+                    if(submitted) {
+                        // Clear the form
+                        document.querySelector('.contact-form').reset();
+                        // Show success message
+                        alert('Thank you! Your message has been sent successfully.');
+                    }
+                }
+            </script>
+        </section>
+    </div>
+    
+    <!-- Add this before the footer -->
+    <div class="signature-corner">
+        <p class="signature-text">website made by rajanya</p>
+        <img src="images/baraat_rajanya.jpg" alt="Rajanya">
+    </div>
+
+    <!-- Add the flag -->
+    <div class="flag-container">
+        <img src="images/palestine-flag.gif" alt="Palestine Flag">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-contact">
+        <p>&copy; 2025 Baraat Community. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+

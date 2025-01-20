@@ -1,0 +1,596 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Abril Fatface', serif;
+    scroll-behavior: smooth;
+    color: #fff;
+    overflow-x: hidden;
+    background: url('/Users/rajanya/Desktop/baraat_community_website/images/baraat_background.JPEG') no-repeat center center/cover;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem; /* Reduced padding */
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.5rem; /* Reduced text size */
+    white-space: nowrap;
+    color: #f8f8f8;
+}
+
+nav img {
+    width: 120px; /* Reduced logo size */
+    height: auto;
+    position: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem; /* Adjusted spacing */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 0.9rem; /* Reduced text size */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #bc6c25;
+}
+
+/* Hero Section */
+.hero1 {
+    position: relative;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+.hero1 img {
+    width: 350px; /* Reduced logo size */
+    height: auto;
+    animation: bounce 2s infinite;
+}
+
+.hero1 h1 {
+    margin: 20px 0;
+    font-size: 2.5rem; /* Reduced text size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-out;
+    font-family: 'Sparky Stones';
+}
+
+.hero1 p {
+    font-family: 'Sparky Stones';
+    font-size: 2rem;
+}
+/* Hero Section for Gallery */
+.hero2 {
+    position: relative;
+    min-height: 100vh; /* Ensure it covers the entire viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 1rem; /* Add padding for spacing */
+}
+
+.hero2 h1 {
+    margin-top: 80px; /* Add margin to avoid overlap with nav */
+    font-size: 2.5rem; 
+    color: #f39c12;
+    text-align: center;
+}
+
+/* Social Buttons */
+.social-buttons {
+    display: flex;
+    gap: 1rem; /* Adjusted spacing */
+}
+
+.social-buttons a {
+    display: inline-block;
+    width: 50px; /* Reduced size */
+    height: 50px;
+    background-size: cover;
+    transition: transform 0.3s;
+}
+
+.social-buttons a:hover {
+    transform: scale(1.1);
+}
+
+.instagram {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png') no-repeat center center/cover;
+}
+
+.whatsapp {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg') no-repeat center center/cover;
+}
+
+/* Upcoming Section */
+.section {
+    padding: 3rem 1.5rem; /* Adjusted padding */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.section h2 {
+    font-size: 2rem; /* Reduced text size */
+    margin-bottom: 0.8rem;
+    color: #f39c12;
+}
+
+.section p {
+    font-size: 1rem; /* Reduced text size */
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #f8f8f8;
+}
+
+/* Gallery Container */
+.gallery-container {
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px; /* Add spacing between images */
+    margin-top: 20px;
+}
+
+.container img {
+    width: 620px; /* Reduce image size for uniformity */
+    height: 348px;
+    object-fit: cover;
+    border: 5px solid #fefae0;
+    filter: sepia(70%);
+    transition: transform 0.6s, filter 0.6s;
+}
+
+.container img:hover {
+    border-color: #fff;
+    transform: scale(1.1);
+    filter: none;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 2rem;
+    background: rgba(0, 0, 0, 0.9);
+    color: #f8f8f8;
+    font-family: 'Abril Fatface', serif;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.about-container.reverse {
+    flex-direction: row-reverse;
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.about-text {
+    flex: 1;
+    animation: fadeIn 1s ease-out;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #f39c12;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.about-text h2 img.inline-icon {
+    width: 120px;
+    height: auto;
+    margin-right: 0.8rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.about-text p {
+    font-family: "Dosis";
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    animation: fadeIn 1s ease-out;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.about-image img {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeIn 1s ease-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #f39c12, rgba(0, 0, 0, 0));
+    margin: 2rem 0;
+}
+
+/* Contact Section Styling */
+
+/* Translucent Container */
+.container1 {
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with 60% opacity */
+    border-radius: 10px; /* Rounded corners */
+    padding: 0.6rem; /* Add space inside the container */
+    max-width: 1200px; /* Restrict width */
+    margin: 1rem auto; /* Center container on the page */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    margin-top: 7rem;
+    font-family: 'Poppins';
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0.2rem;
+    gap: 4rem; /* Add gap between contact details and form */
+}
+
+.contact-details {
+    flex: 1; /* Take up available space */
+    padding-left: 2rem; /* Add some padding on the left */
+}
+
+.form-container {
+    flex: 1; /* Take up available space */
+    padding-right: 2rem; /* Add some padding on the right */
+}
+
+.contact-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ffcc00;
+}
+
+.contact-section p {
+    
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #fff; /* Ensure text is readable on dark background */
+}
+
+/* Center the form and its elements */
+.contact-form {
+    margin: 1.5rem auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input, 
+.contact-form textarea,
+.contact-form button {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent input fields */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ffcc00;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Button specific styles */
+.contact-form button {
+    background-color: #ffcc00;
+    color: #000;
+    border: 2px solid #ffcc00;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button:hover {
+    background-color: transparent;
+    color: #ffcc00;
+}
+
+/* Footer Styling */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Transparent dark footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Adjust overall section to fit perfectly */
+.contact-section {
+    min-height: calc(100vh - 80px); /* Ensure contact section takes full page height minus footer */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 50px; /* Optional spacing */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-details {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container.reverse {
+        flex-direction: column;
+    }
+
+    .about-text h2 {
+        justify-content: center;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+}
+
+
+/* Responsive Design for About Section */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Sparky Stones';
+    font-size: 0.9rem; /* Reduced text size */
+}
+
+.footer-about {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+ /* Animations */
+ @keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem; /* Reduced for smaller screens */
+    }
+
+    .hero img {
+        width: 200px; /* Further reduced for smaller screens */
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 0.9rem;
+    }
+
+    .social-buttons a {
+        width: 35px;
+        height: 35px;
+
+    }
+}
+
+/* Add this at the end of your CSS file */
+.signature-corner {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;  /* Space between elements */
+    transform: rotate(-5deg);
+    z-index: 5;
+}
+
+.signature-corner img {
+    width: 250px;  /* Width for rectangular shape */
+    height: 150px;  /* Taller height */
+    border: 3px solid #ffcc00;
+}
+
+.signature-text {
+    font-family: 'Sparky Stones', cursive;
+    color: #ffffff;  /* Changed to white */
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 1px #ffcc00;  /* Gold border for text */
+    margin-right: 10px;
+    transform: rotate(-5deg);
+}
+
+.flag-container {
+    position: fixed;
+    bottom: 40px;
+    right: 190px;  /* Positioned next to the image */
+    width: 150px;
+    z-index: 5;
+    transform: rotate(-5deg);  /* Matching slant */
+}
+
+.flag-container img {
+    width: 100%;
+    height: auto;
+}
+
+.whoa-container {
+    position: fixed;
+    bottom: 170px;
+    right: 10px;  /* Positioned next to the image */
+    width: 150px;
+    z-index: 5;
+    transform: rotate(5deg);  /* Matching slant */
+}
+
+.whoa-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .signature-corner {
+        bottom: 40px;
+        right: 10px;
+    }
+    
+    .signature-corner img {
+        width: 80px;
+        height: 100px;
+    }
+    
+    .signature-text {
+        font-size: 1rem;
+    }
+    
+    .flag-container {
+        width: 80px;
+        bottom: 40px;
+        right: 100px;
+    }
+}
+
