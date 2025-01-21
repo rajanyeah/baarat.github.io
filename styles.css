@@ -6,7 +6,7 @@ body, html {
     scroll-behavior: smooth;
     color: #fff;
     overflow-x: hidden;
-    background: url('images/baraat_background.JPEG') no-repeat center center/cover;
+    background: url('/baarat.github.io/images/baraat_background.JPEG') no-repeat center center/cover;
 }
 
 /* Navigation Bar */
@@ -125,11 +125,11 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .instagram {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png') no-repeat center center/cover;
+    background: url('/baarat.github.io/images/instagram-icon.png') no-repeat center center/cover;
 }
 
 .whatsapp {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg') no-repeat center center/cover;
+    background: url('/baarat.github.io/images/whatsapp-icon.png') no-repeat center center/cover;
 }
 
 /* Upcoming Section */
